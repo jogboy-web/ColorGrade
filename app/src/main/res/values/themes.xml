@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ColorGrade" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/cg_accent</item>
+        <item name="colorOnPrimary">@color/cg_background</item>
+        <item name="colorSecondary">@color/cg_accent</item>
+        <item name="android:colorBackground">@color/cg_background</item>
+        <item name="colorSurface">@color/cg_surface</item>
+        <item name="colorOnSurface">@color/cg_text_primary</item>
+        <item name="android:statusBarColor">@color/cg_background</item>
+        <item name="android:navigationBarColor">@color/cg_background</item>
+    </style>
+</resources>

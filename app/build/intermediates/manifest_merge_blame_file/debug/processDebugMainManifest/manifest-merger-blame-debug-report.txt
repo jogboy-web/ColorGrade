@@ -1,0 +1,144 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.colorgrade.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <!--
+12         Izin menulis galeri HANYA untuk Android 7-9 (API < 29).
+13         Android 10+ memakai MediaStore tanpa izin.
+14    -->
+15    <uses-permission
+15-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:6:5-8:38
+16        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+16-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:7:9-65
+17        android:maxSdkVersion="28" />
+17-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:8:9-35
+18
+19    <permission
+19-->[androidx.core:core:1.13.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\d5a39cbafae569593cfdc984b2662bae\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+20        android:name="com.colorgrade.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+20-->[androidx.core:core:1.13.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\d5a39cbafae569593cfdc984b2662bae\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+21        android:protectionLevel="signature" />
+21-->[androidx.core:core:1.13.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\d5a39cbafae569593cfdc984b2662bae\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+22
+23    <uses-permission android:name="com.colorgrade.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+23-->[androidx.core:core:1.13.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\d5a39cbafae569593cfdc984b2662bae\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+23-->[androidx.core:core:1.13.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\d5a39cbafae569593cfdc984b2662bae\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+24
+25    <application
+25-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:10:5-32:19
+26        android:allowBackup="true"
+26-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:11:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.13.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\d5a39cbafae569593cfdc984b2662bae\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+28        android:debuggable="true"
+29        android:extractNativeLibs="false"
+30        android:icon="@mipmap/ic_launcher"
+30-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:12:9-43
+31        android:label="@string/app_name"
+31-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:13:9-41
+32        android:roundIcon="@mipmap/ic_launcher_round"
+32-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:14:9-54
+33        android:supportsRtl="true"
+33-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:15:9-35
+34        android:theme="@style/Theme.ColorGrade" >
+34-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:16:9-48
+35        <activity
+35-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:18:9-25:20
+36            android:name="com.colorgrade.app.MainActivity"
+36-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:19:13-41
+37            android:exported="true" >
+37-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:20:13-36
+38            <intent-filter>
+38-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:21:13-24:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:22:17-69
+39-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:22:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:23:17-77
+41-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:23:27-74
+42            </intent-filter>
+43        </activity>
+44        <activity
+44-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:27:9-30:52
+45            android:name="com.colorgrade.app.editor.EditorActivity"
+45-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:28:13-50
+46            android:exported="false"
+46-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:29:13-37
+47            android:screenOrientation="portrait" />
+47-->D:\tugas 3 ibrohim\ColorGrade\app\src\main\AndroidManifest.xml:30:13-49
+48
+49        <provider
+49-->[androidx.emoji2:emoji2:1.3.0] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\42bef41ca8d5ecf31afd349ba05334bb\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+50            android:name="androidx.startup.InitializationProvider"
+50-->[androidx.emoji2:emoji2:1.3.0] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\42bef41ca8d5ecf31afd349ba05334bb\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+51            android:authorities="com.colorgrade.app.androidx-startup"
+51-->[androidx.emoji2:emoji2:1.3.0] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\42bef41ca8d5ecf31afd349ba05334bb\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+52            android:exported="false" >
+52-->[androidx.emoji2:emoji2:1.3.0] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\42bef41ca8d5ecf31afd349ba05334bb\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+53            <meta-data
+53-->[androidx.emoji2:emoji2:1.3.0] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\42bef41ca8d5ecf31afd349ba05334bb\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+54                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+54-->[androidx.emoji2:emoji2:1.3.0] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\42bef41ca8d5ecf31afd349ba05334bb\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+55                android:value="androidx.startup" />
+55-->[androidx.emoji2:emoji2:1.3.0] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\42bef41ca8d5ecf31afd349ba05334bb\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+56            <meta-data
+56-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\203232cd38ed262966e0f62b6f360378\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+57                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+57-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\203232cd38ed262966e0f62b6f360378\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+58                android:value="androidx.startup" />
+58-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\203232cd38ed262966e0f62b6f360378\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+59            <meta-data
+59-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+60                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+60-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+61                android:value="androidx.startup" />
+61-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+62        </provider>
+63
+64        <receiver
+64-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+65            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+65-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+66            android:directBootAware="false"
+66-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+67            android:enabled="true"
+67-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+68            android:exported="true"
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+69            android:permission="android.permission.DUMP" >
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+70            <intent-filter>
+70-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+71                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+72            </intent-filter>
+73            <intent-filter>
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+74                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+75            </intent-filter>
+76            <intent-filter>
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+77                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+78            </intent-filter>
+79            <intent-filter>
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+80                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PONDOK MULTIMEDIA\.gradle\caches\8.13\transforms\754d8c1c7ad266bcf29d91871085cca3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+81            </intent-filter>
+82        </receiver>
+83    </application>
+84
+85</manifest>

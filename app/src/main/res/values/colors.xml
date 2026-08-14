@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cg_background">#0F1115</color>
+    <color name="cg_surface">#1A1D23</color>
+    <color name="cg_text_primary">#F2F3F5</color>
+    <color name="cg_text_secondary">#9AA0AB</color>
+    <color name="cg_accent">#D9A45B</color>
+    <color name="cg_accent_dark">#B9853F</color>
+</resources>

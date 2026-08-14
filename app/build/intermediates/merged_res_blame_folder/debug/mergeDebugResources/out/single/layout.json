@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.colorgrade.app-mergeDebugResources-30:/layout/activity_main.xml",
+        "source": "com.colorgrade.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.colorgrade.app-mergeDebugResources-30:/layout/activity_editor.xml",
+        "source": "com.colorgrade.app-main-33:/layout/activity_editor.xml"
+    }
+]
