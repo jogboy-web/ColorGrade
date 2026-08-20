@@ -4,11 +4,13 @@ Selamat datang di **ColorGrade** — aplikasi **Android** untuk *photo color gra
 
 ## 📲 Download APK
 
+APK bisa diunduh dari halaman **[Releases](https://github.com/jogboy-web/ColorGrade/releases/latest)** (tombol di bawah). Halaman download ini menampilkan versi & catatan rilis.
+
 | 🏷️ File | 📦 Ukuran | 💾 Cara Pasang |
 |---------|-----------|----------------|
 | 📱 **ColorGrade.apk** | 5.7 MB | Download → buka file → klik **Install** |
 
-[⬇️ **Download ColorGrade.apk**](ColorGrade.apk)
+[⬇️ **Download ColorGrade.apk (Release v1.0.0)**](https://github.com/jogboy-web/ColorGrade/releases/latest)
 
 > ⚠️ **Catatan instalasi:** Jika HP meminta, aktifkan **"Install from unknown sources"** (Sumber tidak dikenal) di pengaturan keamanan HP, karena APK ini tidak dipasang melalui Play Store.
 
@@ -55,7 +57,7 @@ Project ini adalah source code project Android (Gradle). Untuk membangun sendiri
 
 Hasil build: `app/build/outputs/apk/debug/app-debug.apk`
 
-> File `ColorGrade.apk` di root repo ini adalah hasil build yang siap dipasang langsung.
+> APK siap pakai yang bisa langsung dipasang tersedia di halaman **[Releases](https://github.com/jogboy-web/ColorGrade/releases/latest)**.
 
 ---
 
@@ -77,8 +79,9 @@ ColorGrade/
 │       ├── image/                  # Manajemen & processing foto
 │       └── preset/                 # Preset warna siap pakai
 ├── gradle/                         # Wrapper Gradle
-├── ColorGrade.apk                  # APK siap pasang (hasil build)
 └── ...
+
+> ℹ️ File `ColorGrade.apk` siap pasang tidak disimpan di repo, melainkan di-hosting di halaman **[Releases](https://github.com/jogboy-web/ColorGrade/releases/latest)**.
 ```
 
 ---
